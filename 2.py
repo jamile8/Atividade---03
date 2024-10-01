@@ -21,7 +21,7 @@ Ao adicionar uma familia, deve-se limpar o terminal e apresentar o menu novament
 Turma - G93313
 
 Nome das componentes.
-1 - Jamile Reis
+1 - Jamile Souza Reis
 2 - Rayane Costa dos Santos
 3 - Araúna Noemi
 """
@@ -82,3 +82,26 @@ while True:
 
 nome_do_arquivo = "Pesquisa_de_Habitantes.txt"
 
+with open(nome_do_arquivo, "w") as Pesquisa_de_Habitantes:
+    Pesquisa_de_Habitantes.write(f"Total de familias: {total_de_familias}")
+    Pesquisa_de_Habitantes.write(f"Média de salário: {media_de_salarios}")
+    Pesquisa_de_Habitantes.write(f"Média de filhos: {media_filhos}")
+    Pesquisa_de_Habitantes.write(f"Maior Salário: {maior_salario}")
+    Pesquisa_de_Habitantes.write(f"Menor Salário: {menor_salario}")
+
+
+Pesquisa_de_Habitantes.close()
+print("======= Dados Salvo com Sucesso! ========")
+
+with open(nome_do_arquivo, "r")as arquivo_de_origem:
+    for linha in arquivo_de_origem:
+        linha.strip().split("\n")
+
+Pesquisa_de_Habitantes.close()
+
+
+print(f"Total de familias: {total_de_familias}")
+print(f"Média de salário: {media_de_salarios}")
+print(f"Média de filhos: {media_filhos}")
+print(f"Maior Salário: {maior_salario}")
+print(f"Menor Salário: {menor_salario}")
