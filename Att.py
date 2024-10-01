@@ -35,7 +35,7 @@ os.system("cls || clear")
 @dataclass
 class Familia:
     salario: float
-    num_filhos: int
+    filhos: int
 
 Quantidade_de_familias = 2
 
@@ -45,7 +45,7 @@ print("\n======= Solicitando Dados das Famílias =======")
 for i in range(Quantidade_de_familias):
     familia = Familia(
         salario=float(input("Digite o salário da família: ")),
-        num_filhos=int(input("Digite o número de filhos da família: "))
+        filhos=int(input("Digite o número de filhos da família: "))
     )
     lista_de_familias.append(familia)
 
