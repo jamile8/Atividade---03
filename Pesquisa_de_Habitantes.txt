@@ -1,0 +1,1 @@
+Total de familias: 1Média de salário: 4000.0Média de filhos: 2.0Maior Salário: 4000Menor Salário: 4000

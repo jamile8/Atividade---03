@@ -31,7 +31,6 @@ import os
 from dataclasses import dataclass
 os.system("cls || clear")
 
-# Estrutura de dados
 salario = []
 filhos = []
 lista_de_familias = []
@@ -51,13 +50,15 @@ while True:
     opcao = int(input("Digite o código da opção desejada: "))
 
     if opcao == 1:
-        filhos = int(input("Digite quantos filhos você tem: "))
-        filhos.append(filhos)
-        salario = int(input("Digite o seu salário: "))
-        salario.append(salario)
+        filho = int(input("Digite quantos filhos você tem: "))
+        filhos.append(filho)
+        salarios = int(input("Digite o seu salário: "))
+        salario.append(salarios)
         familias.append(1)
         os.system ("cls || clear")
         
+
+    elif opcao == 2:
         total_de_familias = sum(familias)
         soma_dos_salarios = sum(salario)
         soma_dos_filhos = sum(filhos)
@@ -67,16 +68,16 @@ while True:
         media_filhos = soma_dos_filhos / total_de_familias
         media_de_salarios = soma_dos_salarios / total_de_familias
 
-    elif opcao == 2:
         print(f"Total de familias: {total_de_familias}")
-        print(f"Média de salário: {media_de_salarios}")
-        print(f"Média de filhos: {media_filhos}")
-        print(f"Maior Salário: {maior_salario}")
-        print(f"Menor Salário: {menor_salario}")
+        print(f"Média de salário: {media_de_salarios:.2f}")
+        print(f"Média de filhos: {media_filhos:.2f}")
+        print(f"Maior Salário: {maior_salario:.2f}")
+        print(f"Menor Salário: {menor_salario:.2f}")
 
     elif opcao == 3:
         print("Saindo do programa")
         break
+
     else:
         print("Opção inválida")
 
