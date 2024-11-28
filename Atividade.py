@@ -22,7 +22,7 @@ Turma - G93313
 
 Nome das componentes.
 1 - Jamile Souza Reis
-2 - Luana da Conceição
+2 - Aiana de Deus
 3 - Araúna Noemi
 """
 
